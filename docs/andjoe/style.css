@@ -1,0 +1,439 @@
+/* @group Main */
+
+html {
+	position: relative;
+	height: 100%;
+	}
+	
+body {
+	height: 100%;
+	background: #fff url('images/BirdsNBerries.gif') repeat fixed center;
+	font-size:16pt;
+	font-family: 'Raleway', Verdana, sans-serif;
+	color:#666666;
+	line-height: 180%;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+	}
+	
+	
+h1, h2, h3, h4 {
+	font-style:normal;
+	font-weight:600;}
+	
+p {
+	font-size:0.9em;
+	margin-bottom:1.8em;
+	}
+	
+a {
+	color:#006666;
+	text-decoration: none;
+	}
+
+a:hover {
+	color:#CC9999;
+	border-bottom: 1px solid #CC9999;
+	text-decoration: none;
+}
+	
+#logo a.nohover:hover {
+	border-bottom: 0;
+}
+	
+	
+#nav li a {
+	font-weight: 600;
+	border: 0;
+	color:#666666;
+	text-decoration: none;
+	display: block;
+	}
+	
+#nav li a:hover {
+	border-bottom:0px;
+	text-decoration: none;
+	color: #666666;
+	}
+
+.right {
+	text-align: right;
+}
+
+p:first-child:first-letter { 
+ 	float: left;	
+    font-size:4em;
+    margin-top:0.2em;
+    margin-right:5px;
+    color:#554000;
+    }
+    
+.center {
+   	text-align: center;
+   	}
+   	
+p.center:first-child:first-letter {
+	font-size: 1em;
+	float: none;
+	margin-top: 0;
+	margin-right: 0;
+	color: #666666;
+}
+
+/* @end */
+
+
+/* @group Fading in formatting */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+ 
+.fade-in.one {
+	animation-delay: 0, 0;
+	-webkit-animation-delay: 0, 0;
+	-moz-animation-delay: 0, 0;
+	-ms-animation-delay: 0, 0;
+	-o-animation-delay: 0, 0;
+	-ms-animation-delay: 0, 0;
+	}
+.fade-in.two {
+	animation-delay: 0, 1.5s;
+	-webkit-animation-delay: 0, 1.5s;
+	-moz-animation-delay: 0, 1.5s;
+	-ms-animation-delay: 0, 1.5s;
+	-o-animation-delay: 0, 1.5s;
+	-ms-animation-delay: 0, 1.5s;
+	}
+
+/* @end */
+
+
+
+/* @group Header formatting */
+	
+#headercontent {
+	width:41em;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:0;
+	}
+
+	
+#header #nav {
+	display:block;
+	margin-top: 0.5em;
+	width:41em;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	
+#header #nav li {
+	width:7em;
+	list-style:none;
+	margin:0 1.4em;
+	float:left;
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display:inline;
+	}
+	
+#header #nav li:hover {
+	background-color: #FFE3CF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	-webkit-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	-ms-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	box-shadow: 0px 0px 20px 10px #FFE3CF;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	/*IE 7 AND 8 DO NOT SUPPORT SPREAD PROPERTY OF SHADOWS*/
+	}
+		
+	
+#header #nav .rsvp {
+	text-shadow: 0 0 15px #FF6A55;
+	filter: dropshadow(color=#FF6A55, offx=0, offy=0);
+}
+	
+#header #nav .here {
+	background-color: #FFE3CF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	-webkit-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	-ms-box-shadow: 0px 0px 20px 10px #FFE3CF;
+	box-shadow: 0px 0px 20px 10px #FFE3CF;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	/*IE 7 AND 8 DO NOT SUPPORT SPREAD PROPERTY OF SHADOWS*/
+	}
+
+
+#logo {
+	width: 6em;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3em 0;
+}
+
+
+/* @end */
+
+
+/* @group Content formatting */
+#content {
+	display:block;
+	position: relative;
+	width:24em;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3em;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-ms-border-radius: 30px;
+	border-radius: 30px;
+	
+	}
+	
+.newwindow {
+	font-size:0.7em;
+	vertical-align: super;
+}
+
+.caption {
+	display: block;
+	font-size: 0.6em;
+	margin-top: -1em;
+	text-align: right;
+}
+
+a.fancybox-close:hover {
+	border: 0;
+	
+}
+
+.toplink a {
+	display: block;
+	border: 0;
+	color: #CCCCCC;
+	font-size: 2.5em;
+	text-align: right;
+	margin:-0.2em -0.9em 0 0;
+}
+	
+.weather {
+	margin: -1em 0 1em 0;
+}	
+	
+/* @end*/
+
+/* @group Joesdrawings formatting */
+.joesdrawings {
+	opacity: 0.6;
+	-webkit-opacity: 0.6;
+	-moz-opacity: 0.6;
+	-ms-opacity: 0.6;
+	-o-opacity: 0.6;
+	transition: opacity 0.2s ease-in-out;	
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;	
+	}
+
+#drawinglink:hover~img { opacity: 1.0; }
+
+img.coffee {
+	width: 7.2em;
+	position: absolute;
+	top: 13em;
+	left: 50%;
+	margin-left:-21em;
+	}
+	
+img.flower {
+	width: 7.3em;
+	position: absolute;
+	top: 11em;
+	right: 50%;
+	margin-right:-21.5em;
+	}
+	
+img.flowerpot {
+	width: 9em;
+	position: absolute;
+	bottom: -5em;
+	left: 20em;	
+	}
+
+
+/* @end*/
+
+
+
+/* @group Form formatting */
+.labeltitle {
+	display: block;
+	font-weight: 600;
+	font-size: 0.8em;
+	margin-top: 2em;
+	line-height: 1.4em;
+	}
+
+.help {
+	font-size: 0.6em;
+	display: block;
+	line-height: 1.3em;
+	}
+
+.choice {
+	font-size: 0.6em;
+	line-height: 1em;
+	}
+
+.entry {
+	text-align: center;
+	margin: 1em 0;
+}
+
+ul.choicelist {
+	list-style: none;
+	}
+	
+.legal {
+	font-size: 0.5em;
+	text-align: center;
+	padding: 1em 0;
+	}
+
+label.error {
+	display: inline;
+	color: #ff0600;
+	font-size: 12px;
+	position: absolute;
+	left: -18em;
+}
+
+input[type=submit] {
+    background: transparent url("images/submit.gif") 0 0 no-repeat;
+    font-weight: 300;
+    color: #666666;
+    font-size: 1em;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 68px; /* height of the background image */
+    width: 187px; /* width of the background image */
+    border-radius: 1em;
+    border: 0;
+}
+
+
+/* @group Crazy tabs */
+
+.tabnav {
+	margin-top: 2em;
+}
+
+.tabnav li {
+	display: inline;
+	list-style: none;
+	font-weight: 600;
+	width: 50%;
+	padding: 0.5em 2.5em;
+}
+
+.tabnav li a:hover {
+	border: 0;
+}
+
+.accommodationstab {
+	background-color: #DFF0EC;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+.attractionstab {
+	background-color: #FFFAEA;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	}
+	
+.hotelgrid {
+	width: 100%;
+	margin-top: 0.25em;
+	font-size: 0.8em;
+	line-height: 120%;
+	background-color:#DFF0EC;
+}
+.hotelgrid td {
+	vertical-align: middle;
+	padding: 2em 1em 3em 0.8em;
+}
+
+.hotelgrid .hoteldisclaimer {
+	font-size: 0.8em;
+	padding: 2em 2em 0em 2em;
+	
+}
+.hotelinfo {
+	font-size: 0.8em;
+}
+.hotelname {
+	font-weight: 600;
+	font-size: 130%;
+}
+
+.hotelpic {
+	display: block;
+	width: 70px;
+	margin-left: 1em;
+}
+
+#attractions {
+	background-color: #FFFAEA;
+	padding: 1.5em;
+	font-size: 0.9em;
+	line-height: 150%;
+}
+
+
+
+/* @end */

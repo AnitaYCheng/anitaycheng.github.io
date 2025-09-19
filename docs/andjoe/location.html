@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Location &#10084; Anita + Joe</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+<link href='http://fonts.googleapis.com/css?family=Raleway:600,300' rel='stylesheet' type='text/css'>	
+<link rel="stylesheet" href="reset.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="shortcut icon" href="images/favicon.ico" />	
+	
+	
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('#tabs div').hide();
+	$('#tabs div:first').show();
+	$('#tabs ul li:first').addClass('active');
+	$('#tabs ul li a').click(function(){ 
+	$('#tabs ul li').removeClass('active');
+	$(this).parent().addClass('active'); 
+	var currentTab = $(this).attr('href'); 
+	$('#tabs div').hide();
+	$(currentTab).show();
+	return false;
+	});
+	});
+</script>
+
+<!--Back to top link-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.toplink').click(function(){
+	$('html, body').animate({scrollTop:0}, 'slow');
+	return false;
+	});
+
+});
+</script>
+
+
+</head>
+
+
+<body>
+	
+	<header>
+	<div id="headercontent"><!--centering text in grid-->
+		<div id="header">
+			<ul id="nav">
+				<li><a href="wedding.html">Wedding</a></li>
+				<li class="here"><a href="location.html">Livermore</a></li>
+				<li><a href="registry.html">Registry</a></li>
+				<li><a href="rsvp.html"><span class="rsvp">RSVP</span></a></li>
+			</ul>
+		</div>
+			<div id="logo"><a class="nohover" href="index.html"><img title="Anita + Joe" alt="A+J" src="images/stamp.gif" /></a></div>
+		</div>
+		</div>
+	</header>
+	
+	<div id="content">
+	<p>One of California's oldest wine regions, Livermore is still home to many small local vineyards, and the drive on 580 is quite scenic. &#10084;</p>
+		
+	<div class="weather"><a href="http://www.showmyweather.com/" title="Show My Weather Forecast" onclick="window.open(this.href);return(false);"><script type="text/javascript" src="http://www.showmyweather.com/weather_widget.php?int=0&type=js&country=us&state=California&city=Livermore&smallicon=1&current=0&forecast=1&background_color=FFFFFF&color=666666&width&padding=10&border_width=1&border_color=FFFFFF&font_size=14&font_family=Raleway&showicons=1&measure=F&d=2012-12-31"></script></a>
+	</div>
+	
+	
+	
+	
+	<div id="tabs">
+	    <ul class="tabnav">
+	        <li class="accommodationstab"><a href="#accommodations">Accommodations</a></li>
+	        <li class="attractionstab"><a href="#attractions">Attractions</a></li>
+	    </ul>
+	    <div id="accommodations">
+	        <table class="hotelgrid">
+	        	<tr>
+	        		<td colspan="2" class="hoteldisclaimer">Please note that our wedding is in the early afternoon - if you're going to stay at one of the hotels below, please arrive the day before so you can check in!</td>
+	        	</tr>
+	        	<tr>
+	        		<td><img class="hotelpic" src="images/fourpointsgarden.jpg" /></td>
+	        		<td class="hotelinfo"><span class="hotelname"><a href="http://www.starwoodhotels.com/fourpoints/property/overview/index.html?propertyID=712" target="_blank">Four Points by Sheraton</a> in Pleasanton</span><br/><a href="http://goo.gl/maps/VWsL4">5115 Hopyard Road<br/>Pleasanton, CA 94588</a><br/>We have a block of rooms reserved here<br/>
+	        		&#36;</td>
+	        	</tr>
+	        	<tr>
+	        		<td><img class="hotelpic" src="images/hamptoninnlivermore.jpg" /></td>
+	        		<td class="hotelinfo"><span class="hotelname"><a href="http://hamptoninn3.hilton.com/en/hotels/california/hampton-inn-livermore-LVKCAHX/index.html" target="_blank">Hampton Inn Livermore</a></span><br/>
+	        		<a href="http://goo.gl/maps/FWtsc">2850 Constitution Drive<br/>Livermore, California, 94550</a><br/>  &#36;&#36;</td>
+	        	</tr>
+	        	<tr> 
+	        		<td><img class="hotelpic" src="images/americasBVinn.jpg" /></td>
+	        		<td class="hotelinfo"><span class="hotelname"><a href="http://www.americasbestvalueinn.com/bestv.cfm?idp=1260&rcode=gpl" target="_blank">American's Best Value Inn</a></span><br/><a href="http://goo.gl/maps/D1ywp">1421 First Street<br/>Livermore, CA 94550</a><br/>&#36;</td>
+	        	</tr>
+	        	<tr>
+	        		<td><img class="hotelpic" src="images/purpleorchid.jpg" /></td>
+	        		<td class="hotelinfo"><span class="hotelname"><a href="http://www.purpleorchid.com/" target="_blank">The Purple Orchid: Wine Country Resort and Spa</a></span><br/><a href="http://goo.gl/maps/pz2yu">4549 Cross Road<br/>Livermore, CA 94550</a><br/>&#36;&#36;&#36;</td>
+	        	</tr>
+
+	        </table>
+
+	    </div>
+	    <div id="attractions">
+	        <p>Charming <a href="http://www.livermoredowntown.com/" target="_blank">downtown Livermore<span class="newwindow">&#10697;</span></a> is only a few miles from Ravenswood, up Arroyo Rd.</p>
+	        <p>Wine lovers can take advantage of <a href="http://www.lvwine.org/" target="_blank">Livermore's wine history with a tasting!<span class="newwindow">&#10697;</span></a></p>
+	        <p>For those with more shopping prowess, <a href="http://www.paragonoutletslv.com/" target="_blank">Paragon Outlets Livermore Valley<span class="newwindow">&#10697;</span></a> is less than 10 miles northwest of the venue.</p>
+	        <p>For those staying the weekend, <a href="http://www.sanfrancisco.travel/" target="_blank">San Francisco<span class="newwindow">&#10697;</span></a> is the premier city of the Bay Area, and about an hour west of Livermore. Everyone is undoubtedly familiar with the big attractions: Golden Gate Bridge, Union Square, Fisherman's Wharf, Alcatraz. However, Anita's sister Diane knows, loves, and lives in the city, and has curated a PDF guide to little-known attractions that are worth experiencing as much as the big fish!</p>
+	    </div>
+	 </div>
+	
+
+	<span class="toplink"><a href="#">&#8686;</a></span>
+		
+	</div>
+	<div class="legal">&nbsp;</div>
+	
+</body>
+</html>
