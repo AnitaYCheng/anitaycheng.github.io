@@ -1,7 +1,7 @@
 # The Eleventy build of [Anita Cheng's website](https://anitacheng.com/)
 I started from the [Eleventy Duo starter theme](https://github.com/yinkakun/eleventy-duo) and heavily modified it.
 
-I decided to save a version of this website separately, since I prefer to build and test locally. (Also, because the GitHub Actions I've seen involved `npm` and the Duo theme uses `yarn` and I just couldn't be arsed to figure it out for yarn...)
+I prefer to build and test locally, so I'm just launching the GitHub page from the `/docs` folder. (Also, because the GitHub Actions I've seen involved `npm` and the Duo theme uses `yarn` and I just couldn't be arsed to figure it out for yarn...)
 
 This will be the initial build from March 2024. I probably won't bother updating this repo with new blog posts or the like.
 
