@@ -56,7 +56,7 @@ I’ve also learned that people appreciate stupid/basic questions from me. I’v
 
 Admittedly, government is not the place for someone who wants to come in at a junior level and be shown the ropes on everything. There’s simply not the bandwidth for that. But if you’re chomping at the bit to show how much you know and can do, the door’s open!
 
-## 4. Looking for diversity and work/life balance? It’s here.
+## 4. Looking for work/life balance? It’s here.
 
 For the general public, the technology sector is associated with young white men. And that’s because all the sexy news about companies blowing up overnight in popularity are about startups, which tend to lean very young, white, and male. (And rich, but again….another topic for another day.)
 

@@ -15,7 +15,7 @@ imagecaption: The cannabis business permit step-by-step page, shown on a laptop.
 ---
 
 ## The brief
-Cannabis was legalized for recreational use in California in 2016. Policymakers in Sacramento and San Francisco then worked on passing regulations to permit business to legally sell cannabis. 
+Cannabis was legalized for recreational use in California in 2016. Policymakers in Sacramento and San Francisco then worked on passing regulations to permit businesses to legally sell cannabis. 
 
 The next task was to write an application that aspiring cannabis business owners, often first-time business owners, could complete to prove they were responsible enough to sell cannabis to the public.
 

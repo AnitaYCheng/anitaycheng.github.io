@@ -78,7 +78,7 @@ LOL Kara Swisher says “I could kill a techie [or] small poodle” with her awa
 
 Last fireside chat on the CFA Summit main stage this morning is with Dr. Safiya Noble and Khari Johnson.
 
-At first, people thought code was neutral because “it’s just math” but Safiya’s book “Algorithms of Oppression” looked into the the results of keyword searches. Asian and Black women were associated with pornography in search engines. People said “that’s what people are searching for” but is that what Asian and Black women are searching for? (We’re people too!) 
+At first, people thought code was neutral because “it’s just math” but Safiya’s book “Algorithms of Oppression” looked into the results of keyword searches. Asian and Black women were associated with pornography in search engines. People said “that’s what people are searching for” but is that what Asian and Black women are searching for? (We’re people too!) 
 
 Government has to be the guardrails for runaway tech, although we don’t have good enforcement mechanisms right now. Maybe the FTC. There has been a lot of deregulation happening, with lots of tax breaks going to some of the largest, most powerful companies in the world. Government needs to hold companies accountable. And Gen Z is not having it, so we might recoup some losses there.
 
@@ -158,7 +158,7 @@ You have to encourage thoughtful decision-making, defining research while not di
 
 The monthly rolling research model (with non-researchers using templates) resulted in lots of good data. But without an expert researcher to guide the synthesis, the findings were limited in impact and the conclusions were sometimes inaccurate. And there was pressure in “doing research” every month instead of focusing on impactful insights. 
 
-When Nadine and Jennifer redefined the researcher role to evaluate the research need, and how to involve stakeholders. 
+When Nadine and Jennifer joined the team, they redefined the researcher role to evaluate the research need. They also looked at how to involve stakeholders. 
 
 When doing research with marginalized communities (ex: monolingual speakers), you have to be sensitive to their needs for safety and comfort, and being aware of the power dynamics. Someone doing research could do real harm if they haven’t had training, like trauma-informed research.
 

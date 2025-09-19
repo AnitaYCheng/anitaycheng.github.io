@@ -118,8 +118,10 @@ table {
   caption-side: bottom;
   overflow-x: auto;
   min-width: 100%;
-  border: 1px solid color-mod(var(--color) alpha(30%));
+  border: 1px solid color-mod(var(--color) alpha(20%));
   margin-top: 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size:var(--text-base);
 }
 
 table caption {
@@ -128,13 +130,14 @@ table caption {
 
 td,
 th {
-  border: 1px solid color-mod(var(--color) alpha(30%));
+  border: 1px solid color-mod(var(--color) alpha(20%));
   padding: 0.5rem;
   text-align: left;
 }
 
 th {
-  font-weight: 500;
+  font-weight: 700;
+  background:rgba(10,121,133,.1);
 }
 
 td:only-child {

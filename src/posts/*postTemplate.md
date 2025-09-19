@@ -16,4 +16,7 @@ tags:
     - life
     - events
     - COVID
+    - parenting
 ---
+
+{% image "src/images/URL.jpg", "image alt text", "figcaption text" %}

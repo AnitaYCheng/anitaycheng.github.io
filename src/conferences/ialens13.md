@@ -6,5 +6,4 @@ eventType: Interview
 talkURL: /talk/ialens13/
 tags: conference
 eventVideoURL: 'https://youtu.be/AqqU22AMcJU?si=30RuH3kfexWZ65Ee'
-eleventyExcludeFromCollections: true
 ---

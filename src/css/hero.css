@@ -8,6 +8,10 @@
   font-size: var(--text-5xl);
 }
 
+.hero h2 {
+  margin-top:3rem;
+}
+
 .hero p {
   font-size: var(--text-1xl);
   margin-top: 2rem;

@@ -10,6 +10,7 @@ tags:
     - notes
     - design
     - events
+eleventyExcludeFromCollections: true
 ---
 
 [Watch the event video on YouTube](https://www.youtube.com/watch?v=TnvAME1OAr0).

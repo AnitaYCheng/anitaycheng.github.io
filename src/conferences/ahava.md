@@ -6,5 +6,4 @@ eventType: Interview
 talkURL: /talk/what-did-you-learn/
 tags: conference
 eventVideoURL: 'https://youtu.be/hpeTA5DgAM0?si=ysILxeuOoqCD6MYh'
-eleventyExcludeFromCollections: true
 ---

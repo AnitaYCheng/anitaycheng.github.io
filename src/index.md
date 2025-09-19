@@ -1,12 +1,12 @@
 ---
 layout: home
 image: '/images/bulb_icon.json'
-description: San Francisco-based content strategist, using robust information architecture and content design to empower people.
+description: SF-based content designer who uses robust information architecture and UX writing to empower others.
 ---
 
 # Hi, I’m Anita!
 
-## Content designer, information architect, occasional front-end developer, perpetual do-gooder
-I’m a former cancer researcher who switched to tech to help people faster. Currently, I’m helping to clarify federal government services at [18F](https://18f.gsa.gov/).
+## Content designer, UX writer, information architect, occasional front-end developer, perpetual do-gooder
+I’m a former cancer researcher who switched to tech to help people faster. I’ve made information and services clearer about COVID, affordable housing, and permitting for local and federal government.
 
-I love to chat with other career-changers! [Book a mentoring call with me on ADPList](https://adplist.org/mentors/anita-cheng).
+I love to chat with other technologists and career-changers! [Schedule a virtual coffee with me! ☕️](https://calendar.app.google/WLKzHeMRDWNQ9Qzx5).

@@ -67,3 +67,9 @@
 .custom-shape-divider-top .shape-fill {
   fill: #FFFFFF;
 }
+
+.footer-symbol {
+  display:flex;
+  justify-content: center;
+  color: #292929;
+}

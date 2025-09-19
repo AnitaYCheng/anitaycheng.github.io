@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://anitacheng.com/sitemap.xml

@@ -1,0 +1,266 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://mastodon.publicinterest.town/@anitaycheng" rel="me">
+    
+    <link rel="canonical" href="http://anitacheng.com/talk/pods-framework/">
+    
+     
+    <meta name="robots" content="noindex">
+    
+    <link href="/assets/main.css" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>
+    Set it and forget it: Structured content in WordPress with the Pods framework
+      
+         | Anita Cheng
+      
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <meta property="og:title" content="Set it and forget it: Structured content in WordPress with the Pods framework">
+    <meta property="og:site_name" content="Anita Cheng">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://anitacheng.com/talk/pods-framework/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="generator" content="Eleventy v2.0.0">
+
+    
+      <meta name="twitter:creator" content="@anitaycheng">
+    
+
+    
+    
+    
+      <meta name="description" content="A runthrough of using the Pods framework in WordPress.">
+      <meta property="og:description" content="A runthrough of using the Pods framework in WordPress.">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="http://anitacheng.com/images/AClogo.svg">
+      <meta name="twitter:image" content="http://anitacheng.com/images/AClogo.svg">
+    
+
+    
+      
+    
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+    if (typeof lottie == 'undefined') {
+        document.write(unescape("%3Cscript src='/assets/lottie-player.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYNC5GDL89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LYNC5GDL89');
+</script>
+  </head>
+
+  
+    
+      <header class="header" aria-labelledby="site-title">
+        <div class="header__content">
+          <div class="site-title" id="site-title">
+            <a href="/"><img class="site-logo" src=" /images/AClogo.svg " alt="" >
+            <span class="site-text">Anita Cheng</span>
+            </a>
+          </div>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/work/"  >Work</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/writing/page-1/"  >Writing</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+                    
+                  
+
+                  <li class="nav-item">
+                    <a href="/speaking/" aria-current="page" >Speaking</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/about/"  >About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main id="maincontent" class="main">
+        
+<article class="post">
+  <header class="post__header">
+    <h1>Set it and forget it: Structured content in WordPress with the Pods framework</h1>
+    <h2 class="post__details">Given at East Bay WordPress Meetup as a 45-min talk</h2>
+    <div class="post__details">
+      A 5 min read
+    </div>
+  </header>
+
+  <main class="post__content">
+    <p></p>
+  
+  <h2>Transcript (and see <a href="https://docs.google.com/presentation/d/1Z_P5Iwr23aRyg6LEnBCYjP8n5gL0ZxjThtcR4ykw1pc/edit?usp=sharing" target="_self" rel="noopener noreferrer">slides</a>)</h2>
+    <p>Hi everyone, and welcome to “Set it and forget it: Structured content in WordPress with the Pods framework.” I‘m Anita.</p>
+<p>About me. I’m a User Experience Team of One working on affordable housing in San Francisco, and current content strategist for this year’s IA Summit conference. Hilariously, both gigs were supposed to be about content and I ended up doing front-end dev for both. Fun fact about me—I’m a former cancer scientist. As you can tell, I’m really big on empowering people. Hence this talk.</p>
+<p>As a content strategist and UXer, what empowerment means for my job, is mostly having structured content. (Yes, I believe empowerment takes many forms!)</p>
+<p>So what IS structured content? It means that it’s content organized by default, usually with metadata when you set up the system. When you have structured content, there should be no fussy formatting, no touching code, no copy-pasting across multiple pages, not trapped by the WYSIWYG field. Things should “just work” without you having to check multiple places.</p>
+<p>Sound familiar? These are all reasons why we started using a CMS like WordPress in the first place!</p>
+<p>Now here’s the ugly truth. Those WordPress themes we all love, the very reason why WordPress runs 30% of all websites today….they are all total failures of structured content.</p>
+<p>The thing that runs a theme, is the stylesheet and the <code>functions.php</code> file. They’re theme-specific, they create anything the theme needs, and they create custom post types and taxonomy. That means if you’re running a photography blog, you’ll probably have photos, articles, photographers, locations….all contained as custom content types, only in that theme.</p>
+<p>But what happens when you change the theme? It’s all gone, all that custom content seems to disappear.</p>
+<p>So what‘s happening here?</p>
+<p>Imagine you had a restaurant. This guy made the headlines last month, for going into a Waffle House and grilling his own burger there since the employees were asleep. There’s a reason it made the headlines, because...that’s weird, right?</p>
+<p>And there are certain things that make you go “Hmmm.” Is this an insurance company...Or a former Pizza Hut? The building’s very design is confusing, you aren’t quite sure what you’re going to get by looking at it. You look at the building and you think “Oh it’s a Pizza Hut” but then it’s...not...</p>
+<p>This is because you have overlapping roles that are mixed-up with each other! Which is really obvious in a restaurant!</p>
+<p>In a well-run restaurant, these roles don’t overlap. The cooks don’t take orders from the diners, because they’re busy cooking! The waiters don’t cook, because they’re making sure the diners are having a good experience. And let’s hope the diners don’t have to create dishes for themselves in a restaurant!</p>
+<p>First, you have a kitchen, where all the raw ingredients sit, waiting to be cooked and plated according to the chef’s menu.</p>
+<p>The diner’s experience is another “role” of sorts. They could see a menu (drink menu, food menu, dessert menu) or it could be the dishes or drinks or silverware.</p>
+<p>Then there is the waiter. They take information from the the diner to the kitchen, and then take food and drinks from the kitchen to the diner. They go in between the diners and the kitchen, and make sure everything gets to where it’s supposed to go.</p>
+<p>Now, we already have a development framework that separates the roles similarly—the MVC software architectural pattern.</p>
+<p>A restaurant is like software—you want these functions to be completely separate. In software, the model is the database, where all the information sits. The view is whatever you see on the screen. And the controller is a bit of code that modifies and runs information back and forth between the model, view, and the user.</p>
+<p>With this, if the view— the look—is changed, no content is changed. It’s like in a restaurant—if you change the design of the menu, or the color of the walls, it doesn’t change the food. In software, you can change the color, the fonts, even the layout, move stuff around, and it doesn’t change the content.</p>
+<p>With this framework, we can start to think about how to build our WordPress setup in a way that separates these functions.</p>
+<p>The problem with WordPress themes is that they’re a mix of model, view, and controller all in one. It’s supposed to be mainly view, but it can also define a lot of structure! You change one side, you’ll change the function of another.</p>
+<p>Which is how you end up with a confusing mess, where you aren’t sure what you’re going to get!</p>
+<p>The way to fix this, is by keeping structure out of the <code>functions.php</code> file as much as possible, and by using plugins. Plugins are theme-independent. They’re a mix of model and controller. If you use plugins to build your structured content, you can change the theme and everything stays.</p>
+<p>So that’s a high level look about we should use plugins to build our structured content, and not the <code>functions.php</code> file. But then, why Pods and not another plugin?</p>
+<p>Here‘s a comparison chart of various WordPress plugins that provide structure. Sure there‘s Advanced Custom Fields and Toolset Types, but they don‘t have the features that Pods does. Pods is independent of <code>functions.php</code>, you only need HTML and CSS, adding relationships to content is easy, and it‘s free! Plus there‘s the developer Jim for support. Seriously, nobody beats Jim. He was even answering my questions as a hurricane was bearing down on his house.</p>
+<p>The project I’ll be showing you today is the website I created for the IA Summit conference. At work, we’re on Drupal, and the less I say about Drupal, honestly, the better!</p>
+<p>So this is the history of the project. I was dealing with a bunch of mixed-up content that was just migrated from an incomplete Drupal project. People had attempted to build detailed structured content for the site in Drupal, but—get this—they couldn’t find a Drupal theme developer to build it as specified. Surprise, surprise. And keeping in mind that everyone would literally work from scratch to build a completely new site every year.</p>
+<p>And on the organizing side, a new team is always brought in every year. Which means, the website team might change, and of course there was no documentation at all. And with a new website team, they might change out the theme without thinking too hard about things. Remember what we said about not using themes to build functionality? Yeah. So that’s why I knew I needed to do this with a plugin.</p>
+<p>As content strategist, I then asked myself, what should the conference site revolve around? What is that one thing that makes us special? It‘s all about the people!</p>
+<p>So I connected a “Person” custom post type to talks and posters, using Pods. I was able to pull people‘s bios from their single post into “Talk” custom post types.</p>
+<p>You can also build Pods Templates in the WordPress admin dashboard. They can replace any built-in page templates using HTML, CSS, and what they call “magic tags.” You can also use built-in conditionals and a repeater for multiple instances.</p>
+<p>Here’s an example of how I used conditional layouts on a “Talk” custom post type.</p>
+<p>You can also pull it all together with shortcodes! You can insert Pods content into any WordPress pages or posts, whether it be a single item, a list of items, field from a single item, field from the current item, or even a form for editing Pods. You can also use SQL calls to filter in shortcodes.</p>
+<p>Here‘s an example of what that looks like, using filters to display people involved in IA Summit. These are the co-chairs, the keynote speakers, and session speakers.</p>
+<p>Thank you for your time! Any questions?</p>
+
+  </main>
+
+</article>
+ <div id="progress-bar"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer__content">
+              <div class="footer-symbol">
+                <lottie-player src=" /images/mail_heart_icon.json" background="transparent" aria-description="Simple line animation of an envelope opening with a heart bouncing out" style="width:100px;height:100px;margin:auto;" speed="1" loop hover></lottie-player>
+              </div>
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="mailto:design@anitacheng.com" target="_self" rel="noopener noreferrer">Email</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://www.linkedin.com/in/anitaycheng/" target="_self" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/AnitaYCheng/" target="_self" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+            
+
+            
+          </ul>
+
+          
+
+          <div class="footer-symbol">
+            <webring-18f from="https://anitacheng.com"></webring-18f>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/assets/main.js" defer></script>
+    <script type="text/javascript" src="https://webring.18f.org/webcomponent.js"></script>
+  
+</html>

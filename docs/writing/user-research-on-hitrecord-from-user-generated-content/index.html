@@ -1,0 +1,346 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://mastodon.publicinterest.town/@anitaycheng" rel="me">
+    
+    <link rel="canonical" href="http://anitacheng.com/writing/user-research-on-hitrecord-from-user-generated-content/">
+    
+    
+    <link href="/assets/main.css" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>
+    How I did user research on hitRECord, from user-generated content
+      
+         | Anita Cheng
+      
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <meta property="og:title" content="How I did user research on hitRECord, from user-generated content">
+    <meta property="og:site_name" content="Anita Cheng">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://anitacheng.com/writing/user-research-on-hitrecord-from-user-generated-content/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="generator" content="Eleventy v2.0.0">
+
+    
+      <meta name="twitter:creator" content="@anitaycheng">
+    
+
+    
+    
+    
+      <meta name="description" content="A detailed thought walk-through about doing user research on hitRECord.org, from user-generated content already on the site.">
+      <meta property="og:description" content="A detailed thought walk-through about doing user research on hitRECord.org, from user-generated content already on the site.">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="http://anitacheng.com/images/AClogo.svg">
+      <meta name="twitter:image" content="http://anitacheng.com/images/AClogo.svg">
+    
+
+    
+      
+    
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+    if (typeof lottie == 'undefined') {
+        document.write(unescape("%3Cscript src='/assets/lottie-player.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYNC5GDL89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LYNC5GDL89');
+</script>
+  </head>
+
+  
+    
+      <header class="header" aria-labelledby="site-title">
+        <div class="header__content">
+          <div class="site-title" id="site-title">
+            <a href="/"><img class="site-logo" src=" /images/AClogo.svg " alt="" >
+            <span class="site-text">Anita Cheng</span>
+            </a>
+          </div>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/work/"  >Work</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+                    
+                  
+
+                  <li class="nav-item">
+                    <a href="/writing/page-1/" aria-current="page" >Writing</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/speaking/"  >Speaking</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/about/"  >About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main id="maincontent" class="main">
+        <article class="post">
+  <header class="post__header">
+    <h1>How I did user research on hitRECord, from user-generated content</h1>
+    <div class="post__details">
+      <time datetime="2014-10-02">Oct 2, 2014</time>, a <span>5 min read</span>
+    </div>
+  </header>
+
+<aside aria-label="Table of contents" class="aside__toc">
+  <strong>Table of contents</strong>
+  <nav class="toc" >
+        <ol><li><a href="#hitrecorders%2C-in-their-own-words-(motivation)">hitRECorders, in their own words (motivation)</a></li><li><a href="#what-hitrecorders-were-actually-doing-on-the-site-(intent)">What hitRECorders were actually doing on the site (intent)</a></li><li><a href="#what-hitrecorders-did-off-the-site-(context)">What hitRECorders did off the site (context)</a></li><li><a href="#personas">Personas</a></li><li><a href="#so-is-this-enough-user-research%3F">So is this enough user research?</a></li><li><a href="#but-what-if-my-site%2Fapp-isn%E2%80%99t-a-social-community-where-people-write-about-themselves%3F">But what if my site/app isn’t a social community where people write about themselves?</a></li></ol>
+      </nav>
+</aside>
+
+
+  <main class="post__content">
+    
+      <figure><picture><source type="image/webp" srcset="/images/fUsiS7kc4X-400.webp 400w, /images/fUsiS7kc4X-800.webp 800w, /images/fUsiS7kc4X-1126.webp 1126w" sizes="100vw"><source type="image/jpeg" srcset="/images/fUsiS7kc4X-400.jpeg 400w, /images/fUsiS7kc4X-800.jpeg 800w, /images/fUsiS7kc4X-1126.jpeg 1126w" sizes="100vw"><source type="image/png" srcset="/images/fUsiS7kc4X-400.png 400w, /images/fUsiS7kc4X-800.png 800w, /images/fUsiS7kc4X-1126.png 1126w" sizes="100vw"><img alt="Screenshot of hitRECord manifesto collaboration." loading="lazy" decoding="async" src="/images/fUsiS7kc4X-400.jpeg" width="1126" height="619"></picture><figcaption></figcaption></figure>
+    
+    <p>Let’s be honest here. “User research” seems like this giant mysterious thing that you can only have if your company has a dedicated UX department with trained UX researchers, and the financial resources to pay users generously for their time in talking with you. If you don’t have that, might as well throw up your hands and call it a lost cause, right? Wrong! There are always ways to find out (at least approximately) who your users are and what they think. It might not be perfect, but seriously, any user research is better than working with nothing. All you need to know, really, is <em>motivation, intent, and context.</em></p>
+<p>I came across such a quandary myself, in my quest to learn more about <a href="http://www.hitrecord.org/" title="hitRECord website" target="_self" rel="noopener noreferrer">hitRECord’s</a> active user base. Turns out you don’t have much to offer a stranger when you’re a random person who only has coffee or lunch to offer (and only if they were local to Los Angeles to boot!). But if there’s one thing I pride myself on, it is the ability to Figure Things Out. So I managed to find a way to get the main personas, by using the site itself.</p>
+<h2 id="hitrecorders%2C-in-their-own-words-(motivation)" tabindex="-1">hitRECorders, in their own words (motivation)</h2>
+<p>For starters, <a href="http://www.hitrecord.org/" title="HitRecord site" target="_self" rel="noopener noreferrer">hitRECord.org</a> is an open collaboration production company, combining the efforts of 300,000 artists around the world to make short films, books, music, and more recently, TV shows.</p>
+<p>Because it is open and as anonymous as you make it, hitRECorders often share very personal stories on the site, in the form of text, image, video, or music uploads. These are referred to as “RECords.” There were several collections of work (known as “collaborations”) on the site that would allow me to get a better idea of <strong>why</strong> they participated in the community. It’s only natural that people would want to learn more about each other in a community like that. I went through all the text RECords from three specific collaborations that dealt with these motivations. I gathered quotes about why the artists joined the site and what the hitRECord community meant to them.</p>
+<p>The collaborations I used were:</p>
+<ol>
+<li><a href="http://www.hitrecord.org/collaborations/453" title="HitRECord manifesto collab" target="_self" rel="noopener noreferrer">HitRECord: a manifesto</a></li>
+<li><a href="http://www.hitrecord.org/collaborations/2865" target="_self" rel="noopener noreferrer">Who are you? self-response interviews</a></li>
+<li><a href="http://www.hitrecord.org/records/672881" target="_self" rel="noopener noreferrer">Why do we hitRECord?</a></li>
+</ol>
+<p>When I was done, I had quotes from 150 hitRECorders, organized in a nice spreadsheet.</p>
+<h2 id="what-hitrecorders-were-actually-doing-on-the-site-(intent)" tabindex="-1">What hitRECorders were actually doing on the site (intent)</h2>
+<p>To determine the user’s intentions on the site, I examined the recent upload history of all 150 hitRECorders in my spreadsheet, noting patterns and assigning values to the general types of work I saw.</p>
+<ol>
+<li>“Trailblazer” – mostly spearheads collaborations, expects others to work on them</li>
+<li>“Collaborator” – mostly works on active projects, fulfilling specific requests</li>
+<li>“Sponge” – mostly contributes to ongoing collaborations, but doesn’t aim for active projects or requests</li>
+<li>“Archiver” – mostly uploads own work without paying attention to other collaborations</li>
+</ol>
+<figure><picture><source type="image/webp" srcset="/images/WiiHBOsHuG-400.webp 400w, /images/WiiHBOsHuG-745.webp 745w" sizes="100vw"><source type="image/jpeg" srcset="/images/WiiHBOsHuG-400.jpeg 400w, /images/WiiHBOsHuG-745.jpeg 745w" sizes="100vw"><source type="image/png" srcset="/images/WiiHBOsHuG-400.png 400w, /images/WiiHBOsHuG-745.png 745w" sizes="100vw"><img alt="Screenshot of hitRECorder's recent upload" loading="lazy" decoding="async" src="/images/WiiHBOsHuG-400.jpeg" width="745" height="656"></picture><figcaption>Recent work of “collaborator” type</figcaption></figure>
+<p>What was interesting was that I had a hypothesis of what these personas would be: trailblazer, collaborator, archiver. Gathering the quotes and looking at the uploads actually made me add another – the “sponge,” because it didn’t fit in anything else. It’s very interesting what the data will show you if you let it!</p>
+<h2 id="what-hitrecorders-did-off-the-site-(context)" tabindex="-1">What hitRECorders did off the site (context)</h2>
+<p>The last part of learning their motivations on the site, was to learn their context. Not all 150 hitRECorders had social media links in their profile, but I found and Googled as many as I could. The aim was learn what their “day job” was in order to determine how hitRECord fit into their life. Again, I assigned what turned out to be 4 values across the board:</p>
+<ol>
+<li>Considers hitRECord to be their primary daily activity (including special users known as “curators”)</li>
+<li>Has artistically creative job, adds to it with hitRECord work</li>
+<li>Has production job in a creative industry, uses hitRECord as artistic outlet</li>
+<li>Has completely non-creative job, uses hitRECord as artistic outlet</li>
+</ol>
+<h2 id="personas" tabindex="-1">Personas</h2>
+<p>After assigning these two values, and noting that there was a general match between the two qualities, I came up with 4 personas:</p>
+<ol>
+<li>“Trailblazer” – mostly spearheads artistic direction, expects others to work on them. Primarily staff members, some curators. hitRECord is their primary daily activity.</li>
+<li>“Collaborator” – mostly works on active projects, fulfilling specific requests. Likely has production job in a creative industry or has serious artistic hobby, uses hitRECord as artistic outlet.</li>
+<li>“Sponge” – mostly contributes to ongoing collaborations, but doesn’t aim for active projects or requests. Often has completely non-creative job, uses hitRECord as artistic outlet</li>
+<li>“Archiver” – mostly uploads own work without paying attention to other collaborations.</li>
+</ol>
+<figure><picture><source type="image/webp" srcset="/images/CwY21Q6t96-400.webp 400w, /images/CwY21Q6t96-800.webp 800w, /images/CwY21Q6t96-1274.webp 1274w" sizes="100vw"><source type="image/jpeg" srcset="/images/CwY21Q6t96-400.jpeg 400w, /images/CwY21Q6t96-800.jpeg 800w, /images/CwY21Q6t96-1274.jpeg 1274w" sizes="100vw"><source type="image/png" srcset="/images/CwY21Q6t96-400.png 400w, /images/CwY21Q6t96-800.png 800w, /images/CwY21Q6t96-1274.png 1274w" sizes="100vw"><img alt="Several rows of my hitRECord active user motivation spreadsheet, showing user, assigned persona, ratings of creative occupation, profile URL, and any quotes from them." loading="lazy" decoding="async" src="/images/CwY21Q6t96-400.jpeg" width="1274" height="522"></picture><figcaption>Using voluntarily-shared content can be fruitful in ascertaining user motivation.</figcaption></figure>
+<p>I then analyzed the data to produce percentages of each user “type,” to see which was the predominating persona using the site.</p>
+<figure><picture><source type="image/webp" srcset="/images/iqaFRLFCoI-400.webp 400w, /images/iqaFRLFCoI-800.webp 800w, /images/iqaFRLFCoI-1280.webp 1280w, /images/iqaFRLFCoI-1390.webp 1390w" sizes="100vw"><source type="image/jpeg" srcset="/images/iqaFRLFCoI-400.jpeg 400w, /images/iqaFRLFCoI-800.jpeg 800w, /images/iqaFRLFCoI-1280.jpeg 1280w, /images/iqaFRLFCoI-1390.jpeg 1390w" sizes="100vw"><source type="image/png" srcset="/images/iqaFRLFCoI-400.png 400w, /images/iqaFRLFCoI-800.png 800w, /images/iqaFRLFCoI-1280.png 1280w, /images/iqaFRLFCoI-1390.png 1390w" sizes="100vw"><img alt="Graph of all users I researched, logging their persona code." loading="lazy" decoding="async" src="/images/iqaFRLFCoI-400.jpeg" width="1390" height="975"></picture><figcaption>Most users were at the collaborator level.</figcaption></figure>
+<p>…which resulted in the findings that I illustrated below.</p>
+<figure><picture><source type="image/webp" srcset="/images/J5gJLgRnw5-400.webp 400w, /images/J5gJLgRnw5-800.webp 800w, /images/J5gJLgRnw5-1280.webp 1280w, /images/J5gJLgRnw5-1700.webp 1700w" sizes="100vw"><source type="image/jpeg" srcset="/images/J5gJLgRnw5-400.jpeg 400w, /images/J5gJLgRnw5-800.jpeg 800w, /images/J5gJLgRnw5-1280.jpeg 1280w, /images/J5gJLgRnw5-1700.jpeg 1700w" sizes="100vw"><img alt="Logging the approach and behavior of trailblazers, collaborators, sponges, and archivers." loading="lazy" decoding="async" src="/images/J5gJLgRnw5-400.jpeg" width="1700" height="1600"></picture><figcaption>Four persona types emerged from onsite and offsite research into the community.</figcaption></figure>
+<h2 id="so-is-this-enough-user-research%3F" tabindex="-1">So is this enough user research?</h2>
+<p>Pfft, no, of course it isn’t. I will be the first person to tell you that. What it is is a starting point. It is better than nothing. For example, I can tell you this data has the following limitations right off the bat:</p>
+<ul>
+<li>Some hitRECorders may be extremely active, but have not bothered to post anything in those 3 collaborations I was sampling from. I don’t have many of the “curators” (arguably the most active and dedicated non-staff users on the site) at all in my spreadsheet because of this reason. But if I didn’t know their motivations of joining the site to start with, I determined that I wasn’t going to go through with the rest of it. If I were to interview users, I would actually start with the curators, and I didn’t have that chance when gathering whatever quotes I could find.</li>
+<li>I didn’t talk to anyone directly when I came up with these personas. (I’ve since started to participate more on the site, which <a href="/projects/hitrecord/" title="HitRECord workflow redesign">allows me to ideate along with and test with real users.</a>) Sure, listening to what people say instead of observing what they do is still limiting, but at least you get the chance to get deeper into their motivations, intent, and context by simply asking them about it.</li>
+<li>I have no clue <em>how</em> each user actually uses the site. This would be the most fascinating thing for me to observe.</li>
+</ul>
+<p>But I’d also argue that this approach also has several strengths:</p>
+<ul>
+<li>It is fairly cheap, aside from your own labor. You don’t need to pay users, you don’t need to spend 30-60 minutes per user talking to them. I gathered quotes from 150 users in the span of about 6 hours. A while, to be sure, but no way could you get that kind of sample in the same amount of time by talking to each user individually.</li>
+<li>You’re guaranteed a variety of users with that sample size. If you only talk to 12 people, you can come up with some rich personas, but how do you know they’re the right mix? With 150, you have more of an idea, even if the sample might still be skewed. Still better than 12, though.</li>
+</ul>
+<h2 id="but-what-if-my-site%2Fapp-isn%E2%80%99t-a-social-community-where-people-write-about-themselves%3F" tabindex="-1">But what if my site/app isn’t a social community where people write about themselves?</h2>
+<p>Do what you can! Look at tweets, look at Facebook, look at Yelp. Find where people are talking about your product and stalk them a little. (It’s not creepy if it’s public and for user research, <em>really…</em>)</p>
+<p>And honestly, if they are talking about your product and complaining about it, the problem needs to be fixed right away! People only bother to post if it’s a really good experience or a really bad one, so those are the big issues you need to tackle ASAP. So even if you don’t have motivations or intent or context, at least you have <em>that</em>.</p>
+<p>Your users are out there, and they are most likely online. Sometimes (usually?) the situation isn’t perfect and you just gotta do the best you can with the resources you have. Learning something about your users is always better than knowing nothing. 🙂</p>
+
+
+  </main>
+  <div class="wave-divider"></div>
+  <aside class="post__aside">
+    
+    <p class="tag-more">Read more about 
+      
+        
+        <a href="/writing/tags/design/">#design</a> &nbsp;
+      
+        
+        <a href="/writing/tags/longform/">#longform</a> &nbsp;
+      
+    </p>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = 'http://anitacheng.com/writing/user-research-on-hitrecord-from-user-generated-content/';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'user-research-on-hitrecord-from-user-generated-content'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+     s.src = 'https://anitachengblog.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    <nav class="post__pagination">
+
+        <a href="/writing/git-for-non-developers/" title="Next post">
+          ←
+          <span>Git for non-developers (and total newbies)</span>
+        </a>
+
+      
+
+        <a href="/writing/hyper-us/" title="Previous post">
+          <span>Hyper-us</span>
+          →
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+ <div id="progress-bar"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer__content">
+              <div class="footer-symbol">
+                <lottie-player src=" /images/mail_heart_icon.json" background="transparent" aria-description="Simple line animation of an envelope opening with a heart bouncing out" style="width:100px;height:100px;margin:auto;" speed="1" loop hover></lottie-player>
+              </div>
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="mailto:design@anitacheng.com" target="_self" rel="noopener noreferrer">Email</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://www.linkedin.com/in/anitaycheng/" target="_self" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/AnitaYCheng/" target="_self" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+            
+
+            
+          </ul>
+
+          
+
+          <div class="footer-symbol">
+            <webring-18f from="https://anitacheng.com"></webring-18f>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/assets/main.js" defer></script>
+    <script type="text/javascript" src="https://webring.18f.org/webcomponent.js"></script>
+  
+</html>

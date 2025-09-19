@@ -7,7 +7,7 @@
     {% if canonicalURL %}
     <link rel="canonical" href="{{ canonicalURL | url }}">
       {% else %}
-    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
     {% endif%}
     {% if talklength %} 
     <meta name="robots" content="noindex">
@@ -61,8 +61,8 @@
     {% endif %}
 
     {# Add mermaid -- start #}
-      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-      <script>mermaid.initialize({startOnLoad:true});</script>
+      {# <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <script>mermaid.initialize({startOnLoad:true});</script> #}
     {# Add mermaid -- end #}
 
     {# Add Lottie animation script -- start #}
@@ -89,12 +89,11 @@
     <div class="grid-wrapper">
       <header class="header" aria-labelledby="site-title">
         <div class="header__content">
-          <span class="site-title" id="site-title">
-            <a href="{{ "/" | url }}"><img class="site-logo" src=" {{ site.defaultSocialImage | url }} " alt="" /></a>
-            <a href="{{ "/" | url }}">
-              {{site.name}}
+          <div class="site-title" id="site-title">
+            <a href="{{ "/" | url }}"><img class="site-logo" src=" {{ site.defaultSocialImage | url }} " alt="" />
+            <span class="site-text">{{site.name}}</span>
             </a>
-          </span>
+          </div>
 
           {% if site.headerLinks %}
             <nav class="nav">
@@ -172,9 +171,14 @@
           {% if site.showFooterAttribution %}
             <p class="footer__attribution">Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">Eleventy</a>, icons by <a href="https://unicornicons.com/" target="_blank" rel="noopener">Unicorn Icons</a></p>
           {% endif %}
+
+          <div class="footer-symbol">
+            <webring-18f from="https://anitacheng.com"></webring-18f>
+          </div>
         </div>
       </footer>
 
     {% bundledjs %}
+    <script type="text/javascript" src="https://webring.18f.org/webcomponent.js"></script>
   </body>
 </html>

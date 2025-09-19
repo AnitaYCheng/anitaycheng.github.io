@@ -151,7 +151,7 @@ In the introductory text of the [holiday-related webpage](https://web.archive.or
 
 1. Bottom line up front: We have to celebrate the holidays at home this year.
 2. All of us have an impact.
-3. Things are looking pretty bad, so that’s why we’re asking you to do do this. We know it isn’t normal.
+3. Things are looking pretty bad, so that’s why we’re asking you to do this. We know it isn’t normal.
 4. Here’s what you can do to help.
 
 {% image "src/images/COVIDHolidays.png", "Screenshot of SF.gov's holiday page, with introductory text on top and a 'What's allowed and not allowed' heading following", "The 'What's allowed and not allowed' heading told readers what the rules were upfront." %}

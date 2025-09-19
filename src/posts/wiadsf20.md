@@ -1,7 +1,7 @@
 ---
 title: 'World IA Day SF 2020 notes'
 date: '2020-02-22'
-description: 'Live-tweeted notes from WIADSF20 sessions at WeWork'
+description: 'Live-tweeted notes from WIADSF20 sessions at WeWork.'
 permalink: /notes/wiadsf20/
 image: 'src/images/Pasted_image_20240613052652.jpg'
 imagealt: A view of the WeWork SF office, with an artificial plant wall with “Do What You Love” lit in neon, and the World IA Day 2020 San Francisco logo on one of the large projector screens.

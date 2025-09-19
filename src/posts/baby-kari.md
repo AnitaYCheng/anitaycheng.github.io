@@ -3,7 +3,7 @@ title: 'Gratitude'
 date: '2021-09-10'
 description: 'Pondering my feelings after becoming a mother at the tail end of a pandemic.'
 permalink: /notes/baby-kari/
-canonicalURL: https://www.instagram.com/p/CTqekjgFo0N/
+canonicalURL: https://www.instagram.com/p/CTqekjgFo0Na3ZNWtYmm5C2nMhQkFac7yEOQd00/
 canonicalSite: Instagram
 image: 'src/images/KariHand.jpg'
 imagealt: A newborn's tiny hand stretches out from inside a swaddle, as her parents hold hands in the background.

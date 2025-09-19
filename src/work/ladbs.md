@@ -68,7 +68,7 @@ To help with customer needs, we needed to present our 1000 documents in various 
 {% image "src/images/LADBSTaxonomy-for-Forms.png", "Google Sheet showing 8 columns and 47 rows, with conditionally colored cells based on status", "Documenting one library of forms, including document ID, accessibility logging, categories, and tags." %}
 
 ### Development
-At this point, we needed to maintain increased expectations with empowered website editors. I took on a complete overhaul of the CMS, becoming the in-house expert after taking over from outside vendors. I minimized the number of custom-coded page templates and widgets, leveraging existing CMS features for ease of maintenance for both developers and non-developers.
+At this point, we needed to maintain increased expectations with empowered website editors. I took on a complete overhaul of the CMS, becoming the in-house expert after taking over from outside vendors. I minimized the number of custom-coded page templates and widgets, leveraging existing CMS features for ease of maintenance for both developers and non-developers. 
 
 In addition to the CMS development, I was responsible for front-end development, adding:
 
@@ -79,8 +79,8 @@ In addition to the CMS development, I was responsible for front-end development,
 
 I also worked with back-end developers on:
 
-- Live wait times widgets for each office
-- Automatic holiday announcements
+- Live wait time widgets for each office
+- Automatic holiday closure announcements
 
 ### Accessibility
 Given that LADBS is a government entity, we also needed to comply with Section 508 accessibility standards. I worked with the Department on Disability to standardize and document PDF accessibility processes.

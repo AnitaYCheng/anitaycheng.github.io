@@ -1,0 +1,372 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://mastodon.publicinterest.town/@anitaycheng" rel="me">
+    
+    <link rel="canonical" href="http://anitacheng.com/notes/eleventy-active-nav/">
+    
+    
+    <link href="/assets/main.css" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>
+    Assigning an active page in Eleventy navigation
+      
+         | Anita Cheng
+      
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <meta property="og:title" content="Assigning an active page in Eleventy navigation">
+    <meta property="og:site_name" content="Anita Cheng">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://anitacheng.com/notes/eleventy-active-nav/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="generator" content="Eleventy v2.0.0">
+
+    
+      <meta name="twitter:creator" content="@anitaycheng">
+    
+
+    
+    
+    
+      <meta name="description" content="A small tip for computed navigation, when the URL structures don’t all match.">
+      <meta property="og:description" content="A small tip for computed navigation, when the URL structures don’t all match.">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="http://anitacheng.com/images/AClogo.svg">
+      <meta name="twitter:image" content="http://anitacheng.com/images/AClogo.svg">
+    
+
+    
+      
+    
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+    if (typeof lottie == 'undefined') {
+        document.write(unescape("%3Cscript src='/assets/lottie-player.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYNC5GDL89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LYNC5GDL89');
+</script>
+  </head>
+
+  
+    
+      <header class="header" aria-labelledby="site-title">
+        <div class="header__content">
+          <div class="site-title" id="site-title">
+            <a href="/"><img class="site-logo" src=" /images/AClogo.svg " alt="" >
+            <span class="site-text">Anita Cheng</span>
+            </a>
+          </div>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/work/"  >Work</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+                    
+                  
+
+                  <li class="nav-item">
+                    <a href="/writing/page-1/" aria-current="page" >Writing</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/speaking/"  >Speaking</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/about/"  >About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main id="maincontent" class="main">
+        <article class="post">
+  <header class="post__header">
+    <h1>Assigning an active page in Eleventy navigation</h1>
+    <div class="post__details">
+      <time datetime="2024-02-03">Feb 3, 2024</time>, a <span>3 min read</span>
+    </div>
+  </header>
+
+<aside aria-label="Table of contents" class="aside__toc">
+  <strong>Table of contents</strong>
+  <nav class="toc" >
+        <ol><li><a href="#the-background">The background</a></li><li><a href="#the-issue">The issue</a></li><li><a href="#the-solution">The solution</a></li></ol>
+      </nav>
+</aside>
+
+
+  <main class="post__content">
+    
+    <h2 id="the-background" tabindex="-1">The background</h2>
+<p>I’ve always believed it was good wayfinding practice to mark where a particular page was in the global navigation, visually as well as in the code. That way the site visitor has an idea of where they are, especially if they landed on a secondary page from a link or a search result.</p>
+<p>This is easy enough to do when hand-coding. But it can get tricky when you’re rolling your own system that computes some things for you too! That was the situation with my Eleventy site.</p>
+<p>Since I started from the <a href="https://eleventyduo.netlify.app/" target="_self" rel="noopener noreferrer">Eleventy Duo theme</a>, my global navigation links are contained in the global <code>site.json</code> as follows:</p>
+<pre><code>&quot;headerLinks&quot;: [
+    {
+      &quot;text&quot;: &quot;Work&quot;,
+      &quot;url&quot;: &quot;/work/&quot;,
+      &quot;external&quot;:false
+    },
+    {
+      &quot;text&quot;: &quot;Writing&quot;,
+      &quot;url&quot;: &quot;/writing/page-1/&quot;,
+      &quot;external&quot;: false
+    },
+    {
+      &quot;text&quot;: &quot;Speaking&quot;,
+      &quot;url&quot;: &quot;/speaking/&quot;,
+      &quot;external&quot;: false
+    },
+    {
+      &quot;text&quot;: &quot;About&quot;,
+      &quot;url&quot;: &quot;/about/&quot;,
+      &quot;external&quot;: false
+    }
+  ],
+</code></pre>
+<p>The <strong>Writing</strong> navigation item goes to the first page of my <a href="https://www.11ty.dev/docs/pagination/#paging-a-collection" target="_self" rel="noopener noreferrer">paginated</a> post collection.</p>
+<p>The theme then assigns an <code>aria-current=&quot;page&quot;</code> in <code>base.njk</code> to any child pages as follows:</p>
+<pre><code>{% if item.url in page.url %}
+    {% set currentAttribute = 'aria-current=&quot;page&quot;' %}
+{% endif %}
+</code></pre>
+<p>That means if the navigation item’s URL is found within a page’s URL, that page will show the <code>aria-current=&quot;page&quot;</code> attribute on the navigation item. Example: <code>/work/ladbs/</code> contains <code>/work/</code>, so the <strong>Work</strong> navigation item on the <a href="/work/ladbs/">LADBS page</a> will be marked <code>aria-current=&quot;page&quot;</code>.</p>
+<p>I can then style that in CSS accordingly:</p>
+<pre><code>[aria-current=&quot;page&quot;] {
+  border-bottom:5px solid #66B1BC;
+}
+</code></pre>
+<h2 id="the-issue" tabindex="-1">The issue</h2>
+<p>My content doesn’t always follow the navigation item URLs cleanly.</p>
+<p>I have 2 kinds of writing that I do: fairly long-form writing and live-tweet notes/summaries, which are much shorter. It didn’t feel right to treat them both the same. I also have talk transcript pages that are <em>related</em> to speaking, but it felt weird to literally have “speaking” in their URLs.</p>
+<p>(Overthinking these things is probably a job hazard of doing information architecture! 😅)</p>
+<p>Not to mention, the <strong>Writing</strong> navigation item doesn’t even have <code>/writing/</code> as its URL, so nothing beyond the first collection page would ever match! And no, I haven’t found a way to easily direct <code>/writing/</code> to <code>/writing/page-1/</code> in the front matter without Eleventy complaining about it.</p>
+<h3 id="things-i-tried" tabindex="-1">Things I tried</h3>
+<p>First I tackled it on an individual page level for the talks and notes. I added new data to the front matter, with the intention of assigning it a navigation item. Couldn’t get that to work, probably because of scope and syntax reasons. (If you only know enough code to be dangerous, scope or syntax <em>always</em> trip you up!)</p>
+<p>Then I tried fiddling with the comparison operators in the navigation in <code>base.njk</code>. But there isn’t an easy way to write code for “If a slug matches text between slashes, pass it through.” I foresaw a <em>huge</em> mess of code.</p>
+<h2 id="the-solution" tabindex="-1">The solution</h2>
+<p>Thinking about the comparison operator, I realized that I could add more oppotunities to match things in the navigation itself.</p>
+<p>I decided to add more things to match in <code>site.json</code> even if most of the items would have duplicates. Introducing <code>slug</code> and <code>slugalt</code>!</p>
+<pre><code>&quot;headerLinks&quot;: [
+    {
+      &quot;text&quot;: &quot;Work&quot;,
+      &quot;url&quot;: &quot;/work/&quot;,
+      &quot;slug&quot;: &quot;/work/&quot;,
+      &quot;slugalt&quot;: &quot;/projects/&quot;,
+      &quot;external&quot;:false
+    },
+    {
+      &quot;text&quot;: &quot;Writing&quot;,
+      &quot;url&quot;: &quot;/writing/page-1/&quot;,
+      &quot;slug&quot;: &quot;/writing/&quot;,
+      &quot;slugalt&quot;: &quot;/notes/&quot;,
+      &quot;external&quot;: false
+    },
+    {
+      &quot;text&quot;: &quot;Speaking&quot;,
+      &quot;url&quot;: &quot;/speaking/&quot;,
+      &quot;slug&quot;: &quot;/speaking/&quot;,
+      &quot;slugalt&quot;: &quot;/talk/&quot;,
+      &quot;external&quot;: false
+    },
+    {
+      &quot;text&quot;: &quot;About&quot;,
+      &quot;url&quot;: &quot;/about/&quot;,
+      &quot;slug&quot;: &quot;/about/&quot;,
+      &quot;slugalt&quot;: &quot;/about/&quot;,
+      &quot;external&quot;: false
+    }
+  ],
+</code></pre>
+<p>And then I was able to add <code>or</code> logic to <code>base.njk</code>:</p>
+<pre><code>{% if item.url in page.url or item.slug in page.url or item.slugalt in page.url %}
+    {% set currentAttribute = 'aria-current=&quot;page&quot;' %}
+{% endif %}
+</code></pre>
+<p>Now, if the page’s URL contains <code>/writing/</code> or <code>/notes/</code> in addition to <code>/writing/page-1/</code> (which was limiting to start with), then it would assign the <strong>Writing</strong> navigation item as the page it sits under. Bonus is that I don't need to fiddle with any individual pages this way either! Mission accomplished! 🎉</p>
+
+
+  </main>
+  <div class="wave-divider"></div>
+  <aside class="post__aside">
+    
+    <p class="tag-more">Read more about 
+      
+        
+        <a href="/writing/tags/coding/">#coding</a> &nbsp;
+      
+        
+        <a href="/writing/tags/notes/">#notes</a> &nbsp;
+      
+    </p>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = 'http://anitacheng.com/notes/eleventy-active-nav/';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'eleventy-active-nav'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+     s.src = 'https://anitachengblog.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    <nav class="post__pagination">
+
+        <a href="/notes/fractured-ux-community/" title="Next post">
+          ←
+          <span>Quick thoughts about the fractured UX community</span>
+        </a>
+
+      
+
+        <a href="/notes/2023-12-01-twivtldr/" title="Previous post">
+          <span>TWiVTLDR 1066</span>
+          →
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+ <div id="progress-bar"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer__content">
+              <div class="footer-symbol">
+                <lottie-player src=" /images/mail_heart_icon.json" background="transparent" aria-description="Simple line animation of an envelope opening with a heart bouncing out" style="width:100px;height:100px;margin:auto;" speed="1" loop hover></lottie-player>
+              </div>
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="mailto:design@anitacheng.com" target="_self" rel="noopener noreferrer">Email</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://www.linkedin.com/in/anitaycheng/" target="_self" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/AnitaYCheng/" target="_self" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+            
+
+            
+          </ul>
+
+          
+
+          <div class="footer-symbol">
+            <webring-18f from="https://anitacheng.com"></webring-18f>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/assets/main.js" defer></script>
+    <script type="text/javascript" src="https://webring.18f.org/webcomponent.js"></script>
+  
+</html>

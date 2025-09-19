@@ -1,0 +1,402 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://mastodon.publicinterest.town/@anitaycheng" rel="me">
+    
+    <link rel="canonical" href="http://anitacheng.com/writing/parallax-scrolling-featured-image-in-wordpress-genesis/">
+    
+    
+    <link href="/assets/main.css" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>
+    How to implement parallax scrolling with the featured image in WordPress Genesis
+      
+         | Anita Cheng
+      
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <meta property="og:title" content="How to implement parallax scrolling with the featured image in WordPress Genesis">
+    <meta property="og:site_name" content="Anita Cheng">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://anitacheng.com/writing/parallax-scrolling-featured-image-in-wordpress-genesis/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="generator" content="Eleventy v2.0.0">
+
+    
+      <meta name="twitter:creator" content="@anitaycheng">
+    
+
+    
+    
+    
+      <meta name="description" content="Tutorial about implementing parallax scrolling using the featured image on any WordPress Genesis post or page.">
+      <meta property="og:description" content="Tutorial about implementing parallax scrolling using the featured image on any WordPress Genesis post or page.">
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="http://anitacheng.com/images/AClogo.svg">
+      <meta name="twitter:image" content="http://anitacheng.com/images/AClogo.svg">
+    
+
+    
+      
+    
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+    if (typeof lottie == 'undefined') {
+        document.write(unescape("%3Cscript src='/assets/lottie-player.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYNC5GDL89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LYNC5GDL89');
+</script>
+  </head>
+
+  
+    
+      <header class="header" aria-labelledby="site-title">
+        <div class="header__content">
+          <div class="site-title" id="site-title">
+            <a href="/"><img class="site-logo" src=" /images/AClogo.svg " alt="" >
+            <span class="site-text">Anita Cheng</span>
+            </a>
+          </div>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/work/"  >Work</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+                    
+                  
+
+                  <li class="nav-item">
+                    <a href="/writing/page-1/" aria-current="page" >Writing</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/speaking/"  >Speaking</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/about/"  >About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main id="maincontent" class="main">
+        <article class="post">
+  <header class="post__header">
+    <h1>How to implement parallax scrolling with the featured image in WordPress Genesis</h1>
+    <div class="post__details">
+      <time datetime="2014-09-08">Sep 8, 2014</time>, a <span>5 min read</span>
+    </div>
+  </header>
+
+<aside aria-label="Table of contents" class="aside__toc">
+  <strong>Table of contents</strong>
+  <nav class="toc" >
+        <ol><li><a href="#the-javascript-files">The JavaScript files</a></li><li><a href="#the-php-(enter-all-of-this-in-your-child-theme%E2%80%99s-functions.php-file)">The PHP (enter all of this in your child theme’s functions.php file)</a></li><li><a href="#the-css-(enter-all-of-this-in-your-child-theme%E2%80%99s-style.css-file)">The CSS (enter all of this in your child theme’s style.css file)</a></li><li><a href="#ta-da!">Ta da!</a></li></ol>
+      </nav>
+</aside>
+
+
+  <main class="post__content">
+    
+      <figure><picture><source type="image/webp" srcset="/images/nXMJL_dolE-400.webp 400w, /images/nXMJL_dolE-800.webp 800w, /images/nXMJL_dolE-1267.webp 1267w" sizes="100vw"><source type="image/jpeg" srcset="/images/nXMJL_dolE-400.jpeg 400w, /images/nXMJL_dolE-800.jpeg 800w, /images/nXMJL_dolE-1267.jpeg 1267w" sizes="100vw"><source type="image/png" srcset="/images/nXMJL_dolE-400.png 400w, /images/nXMJL_dolE-800.png 800w, /images/nXMJL_dolE-1267.png 1267w" sizes="100vw"><img alt="Closeup of the Flying Eyes homepage, showing a large hero image of a Black man wearing thin sunglasses." loading="lazy" decoding="async" src="/images/nXMJL_dolE-400.jpeg" width="1267" height="659"></picture><figcaption></figcaption></figure>
+    
+    <blockquote>
+<p>If you’re just here for the code, go to the <a href="https://github.com/AnitaYCheng/ParallaxFeaturedImage" target="_self" rel="noopener noreferrer">project on GitHub</a>!</p>
+</blockquote>
+<p>This is a solution I made while working on the <a href="https://web.archive.org/web/20150301192556/http://www.flyingeyes.biz/" target="_self" rel="noopener noreferrer">Flying Eyes site </a>– check that out as a demo of this solution.</p>
+<p>Since I like making things easier to use for everybody, including clients, I figured it would be a great idea to be able to change the background image for parallax scrolling in the WordPress dashboard. Normally, you’d have have fiddle with the CSS file every time, which is obviously no good for clients, or your general workflow! Unfortunately, there seemed to be no plugins or other solutions that could make this happen in a simple and clean way, so I combined a few ideas to make this solution.</p>
+<p>Inspired by <a href="http://wevostudio.com/wordpress-parallax-implementation/" target="_self" rel="noopener noreferrer">WevoStudio’s tutorial for parallax scrolling implementation for WordPress</a>, I improved it by making it super-easy to use. Literally, just set a featured image for any page or post, and let ‘er rip!</p>
+<p>This solution is specifically for <a href="http://www.studiopress.com/" title="StudioPress Genesis framework" target="_self" rel="noopener noreferrer">WordPress Genesis</a>, but you could easily modify it for any template use by inserting the PHP structural directions right after the body tag.</p>
+<p>Remember, you should be working on a chid theme with these modifications, otherwise they will be erased when your theme is updated! -sadface-</p>
+<h2 id="the-javascript-files" tabindex="-1">The JavaScript files</h2>
+<p>First of all, you’ll need the JavaScript that makes the whole thing possible. I used <a href="https://github.com/IanLunn/jQuery-Parallax" target="_self" rel="noopener noreferrer">Ian Lunn’s jQuery Parallax script, which you can find at his GitHub</a>. (I’ve also included it in <a href="https://github.com/AnitaYCheng/ParallaxFeaturedImage" target="_self" rel="noopener noreferrer">my project on GitHub</a>.)</p>
+<p>You’ll also need a script to tell the page what to do in terms of animation:</p>
+<pre><code>&lt;pre class=&quot;font:droid-sans-mono lang:js mark:3 decode:true&quot; title=&quot;parallaxcall.js&quot;&gt;(function($) {
+        $(document).ready(function() {
+            $('.parallax').parallax('50%', 0.1);
+        });
+})(jQuery);
+</code></pre>
+<p>The 50% value is the x-position of the image (which you should leave alone), and the 0.1 in this case is the speed at which it will scroll. You can change the speed to your liking.</p>
+<p>Put the jQuery Parallax script as well as the <em>parallaxcall.js</em> script into a <em>js</em> folder in your child theme folder. The structure should be <em>child-theme &gt; js</em>.</p>
+<h2 id="the-php-(enter-all-of-this-in-your-child-theme%E2%80%99s-functions.php-file)" tabindex="-1">The PHP (enter all of this in your child theme’s <em>functions.php</em> file)</h2>
+<p>Now we have to tell WordPress to call the scripts, using the enqueue function like usual:</p>
+<pre><code>&lt;pre class=&quot;font:droid-sans-mono lang:php decode:true&quot; title=&quot;Enqueuing parallax scripts&quot;&gt;// Add Parallax script
+ function add_parallax_scripts() {
+            wp_enqueue_script( 'parallax', get_stylesheet_directory_uri() . '/js/jquery.parallax-1.1.3.js', array(), '1.1.3', true );
+ 	    wp_enqueue_script( 'parallaxcall', get_stylesheet_directory_uri() . '/js/parallaxcall.js', array(), '1', true );
+}
+ add_action( 'wp_enqueue_scripts', 'add_parallax_scripts' );
+</code></pre>
+<p>Now here comes the structural directions. The following tells WordPress that if there’s a featured image (i.e. “post_thumbnail”) attached to the post, to assign it the variable $parallaxImage that carries the URL of the image’s large version. (Make sure you get a nice big image for this use!)</p>
+<p>It makes a new &lt;div&gt; immediately after the &lt;body&gt; tag, with the class “parallax.” It also places a background image with the right styling, using the value of $parallaxImage, which is the featured image’s URL.</p>
+<p>I inserted all of the CSS inline, so it it takes precedence over anything else. You can change the “min-width” to anything you like. “Background-size:cover” (and all the related flavors to cover all browsers) will make sure the image covers the entire browser width, at any size.</p>
+<p>If there is no featured image attached to the post, it will insert a &lt;div&gt; with class “top_margin” to give it some space that we can style later, IF you’re using a fixed navigation bar like I was doing. (Otherwise the page content will go underneath the nav bar if I didn’t have that there.) If you don’t have a fixed navigation bar, you can take that off.</p>
+<pre><code>&lt;pre class=&quot;lang:default mark:7 decode:true &quot; title=&quot;Parallax scrolling structural directions&quot;&gt;// Adds parallax to all featured images, adds top margin if there is no featured image
+	add_action ('genesis_before','use_parallax');
+	function use_parallax() { 
+		if ( has_post_thumbnail() ) {
+			$parallaxImage = wp_get_attachment_image_src( get_post_thumbnail_id( $post-&gt;ID ), 'large'); 
+		?&gt;
+			&lt;div class=&quot;parallax&quot; id=&quot;section_&lt;?php echo the_ID(); ?&gt;&quot; style=&quot;background: url('&lt;?php echo $parallaxImage[0]; ?&gt;') no-repeat fixed; min-height:700px; background-size:cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-color: #000;&quot;&gt;&lt;/div&gt;
+              	  &lt;?
+              	 }
+              	else {
+	          		echo '&lt;div class=&quot;top_margin&quot;&gt;&amp;nbsp;&lt;/div&gt;';
+	          		}
+		
+		}
+</code></pre>
+<p>Also, I was also using WooCommerce, which uses the featured image as its main product image. No parallax scrolling wanted there! You can use this conditional immediately after the <em>function use_parallax() {</em> line if that’s the case. Make it line 4 in the previous example. And don’t forget the additional right brace at the end of the entire thing if you use this conditional!</p>
+<pre><code>&lt;pre class=&quot;lang:php decode:true &quot; title=&quot;Conditional rejecting WooCommerce products&quot;&gt;if ( !is_post_type ('product')) {
+</code></pre>
+<p>Next, we can’t ignore the post titles! Usually for a featured image, the entry title is also styled differently, and this is what the next PHP snippet will do for you. For the Flying Eyes site, I had the headline scrolling normally, in the middle of the image off to the left. This has to be styled different for posts without a featured image, otherwise the design becomes a mess.</p>
+<p>Basically, it adds a class of “parallax-page” to the &lt;body&gt; tag if there is a featured image attached to the post, and a blank class if not. By using CSS, I can select the entry title of only pages with a body class of “parallax-page” later.</p>
+<pre><code>&lt;pre class=&quot;lang:php decode:true &quot; title=&quot;Title styling if parallax&quot;&gt;// * Add custom body class to the head if page has post thumbnail to customize entry title styling
+add_filter( 'body_class', 'parallax_body_class' );
+function parallax_body_class( $classes ) {
+	if ( has_post_thumbnail() ) {
+		$classes[] = 'parallax-page';
+	}
+	else {
+		$classes[] = '';
+	}
+		return $classes;
+}
+</code></pre>
+<h2 id="the-css-(enter-all-of-this-in-your-child-theme%E2%80%99s-style.css-file)" tabindex="-1">The CSS (enter all of this in your child theme’s <em>style.css</em> file)</h2>
+<p>Now, for the styling of the parts surrounding your parallax div.</p>
+<p>If you have a fixed navigation bar for the primary menu, add some margin to the top of the content so it doesn’t slide under when there’s no featured image:</p>
+<pre><code>&lt;pre class=&quot;lang:css mark:2 decode:true &quot; title=&quot;Adds top margin for posts without featured image&quot;&gt;.top_margin {
+	margin-top: 7rem;
+}
+</code></pre>
+<p>Again, you can change the value of the margin to your liking.</p>
+<p>Next is the styling of the titles of these special pages. You can change any of these values as you see fit.</p>
+<pre><code>&lt;pre class=&quot;lang:css decode:true &quot; title=&quot;Styling the titles of the parallax scrolling posts&quot;&gt;.parallax-page .entry-title {
+	position:absolute;
+	top:15rem;
+	left:5rem;
+	background-color: #fff;
+	background-color:rgba(255, 255, 255, 0.7);
+	padding:10px 0;
+	padding:1rem 0;
+	width:40%;
+	text-align: center;
+}
+</code></pre>
+<p>With WooCommerce, we turned off parallax scrolling, so we sure want to turn off any parallax-related title styling too! The most important part is the positioning.</p>
+<pre><code>&lt;pre class=&quot;lang:css mark:3-5 decode:true&quot; title=&quot;Turn off parallax headline style for WooCommerce&quot;&gt;/* Disables parallax headline style for WooCommerce product pages */
+.parallax-page .woocommerce div.product .product_title, .woocommerce #content div.product .product_title, .woocommerce-page div.product .product_title, .woocommerce-page #content div.product .product_title {
+	position:relative!important;
+	top:0!important;
+	left:0!important;
+	clear:none;
+	margin-bottom:1rem;
+	padding:0;
+	width:auto;
+	text-align: left;
+}
+</code></pre>
+<p>I know, all those <em>!important</em>s are really annoying, but you gotta override the WooCommerce styling!</p>
+<p>Don’t forget the media queries to make your parallax section nice and responsive.</p>
+<pre><code>&lt;pre class=&quot;lang:css decode:true&quot; title=&quot;Media Queries to make your parallax section responsive&quot;&gt;@media only screen and (max-width:767px) {  
+	 .parallax {
+	 	height: 500px;
+	}
+
+	.parallax-page .entry-title {
+		width:100%;
+		top:10rem;
+		left:0;
+	}
+}
+</code></pre>
+<p>Change any of the values as you like, but I found this worked great for me.</p>
+<h2 id="ta-da!" tabindex="-1">Ta da!</h2>
+<p>And that’s it! Now you can set any featured image to be the background for your awesome parallax scrolling page!</p>
+
+
+  </main>
+  <div class="wave-divider"></div>
+  <aside class="post__aside">
+    
+    <p class="tag-more">Read more about 
+      
+        
+        <a href="/writing/tags/coding/">#coding</a> &nbsp;
+      
+        
+        <a href="/writing/tags/notes/">#notes</a> &nbsp;
+      
+    </p>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = 'http://anitacheng.com/writing/parallax-scrolling-featured-image-in-wordpress-genesis/';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'parallax-scrolling-featured-image-in-wordpress-genesis'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+     s.src = 'https://anitachengblog.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    <nav class="post__pagination">
+
+        <a href="/writing/hyper-us/" title="Next post">
+          ←
+          <span>Hyper-us</span>
+        </a>
+
+      
+
+        <a href="/writing/rejection-best-thing-ever-happened/" title="Previous post">
+          <span>Why rejection was the best thing that ever happened to me</span>
+          →
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+ <div id="progress-bar"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer__content">
+              <div class="footer-symbol">
+                <lottie-player src=" /images/mail_heart_icon.json" background="transparent" aria-description="Simple line animation of an envelope opening with a heart bouncing out" style="width:100px;height:100px;margin:auto;" speed="1" loop hover></lottie-player>
+              </div>
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="mailto:design@anitacheng.com" target="_self" rel="noopener noreferrer">Email</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://www.linkedin.com/in/anitaycheng/" target="_self" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/AnitaYCheng/" target="_self" rel="noopener noreferrer">GitHub</a>
+                </li>
+              
+            
+
+            
+          </ul>
+
+          
+
+          <div class="footer-symbol">
+            <webring-18f from="https://anitacheng.com"></webring-18f>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/assets/main.js" defer></script>
+    <script type="text/javascript" src="https://webring.18f.org/webcomponent.js"></script>
+  
+</html>

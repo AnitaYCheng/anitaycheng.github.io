@@ -1,6 +1,6 @@
 {
   "name": "Anita Cheng",
-  "description": "Anita does content design and information architecture in government, currently at 18F.",
+  "description": "Anita does content design, UX writing, and information architecture for the public good.",
   "url": "http://anitacheng.com",
   "author": {
     "name": "Anita Cheng",
@@ -51,31 +51,8 @@
       "external": true      
     },
     {
-      "text": "Mastodon",
-      "url": "https://mastodon.publicinterest.town/@anitaycheng",
-      "external": true
-    },
-
-    {
       "text": "GitHub",
       "url": "https://github.com/AnitaYCheng/",
-      "external": true
-    },
-    {
-      "text": "Instagram",
-      "url": "https://www.instagram.com/anitaycheng/",
-      "external": true
-    },
-    { 
-      "text": "ADPList",
-      "url": "https://adplist.org/mentors/anita-cheng",
-      "external": true
-    }
-  ],
-  "footerLinks": [
-    {
-      "text": "RSS",
-      "url": "/feed.xml",
       "external": true
     }
   ],
