@@ -3,14 +3,12 @@ I started from the [Eleventy Duo starter theme](https://github.com/yinkakun/elev
 
 I prefer to build and test locally, so I'm just launching the GitHub page from the `/docs` folder. (Also, because the GitHub Actions I've seen involved `npm` and the Duo theme uses `yarn` and I just couldn't be arsed to figure it out for yarn...)
 
-This will be the initial build from March 2024. I probably won't bother updating this repo with new blog posts or the like.
-
 ## Notes (TBH mostly for myself!)
 - Make sure you're using `node 16` to use Eleventy Duo. Use `nvm install 16` to install it.
 - Install dependencies with `yarn install` 
 - Add any plugins with `yarn add` if the directions are usually `npm install`
 - Serve the site locally with `yarn dev`
-    - `yarn build` will clear out anything in the `publish`folder to build a production version of the site. However, I needed separate `.js` files to use the Photoswipe gallery. Compiling all the JS files rendered it useless. So I actually use the files generated from `yarn dev` to push to GitHub. It apparently doesn't make much of a difference, [according to Eleventy documentation](https://www.11ty.dev/docs/deployment/). 
+    - `yarn build` will clear out anything in the output folder to build a production version of the site. However, I needed separate `.js` files to use the Photoswipe gallery. Compiling all the JS files rendered it useless. So I actually use the files generated from `yarn dev` to push to GitHub. It apparently doesn't make much of a difference, [according to Eleventy documentation](https://www.11ty.dev/docs/deployment/). 
 
 ## Customize
 Open `data/site.json` and adjust the values to your details, it contains vital information to make the site your own. You'll need to change the description, title and URL to match with the project, edit navigation items and social media links.

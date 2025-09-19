@@ -6,7 +6,7 @@ description: SF-based content designer who uses robust information architecture 
 
 # Hi, I’m Anita!
 
-## Content designer, UX writer, information architect, occasional front-end developer, perpetual do-gooder
-I’m a former cancer researcher who switched to tech to help people faster. I’ve made information and services clearer about COVID, affordable housing, and permitting for local and federal government.
+## Content designer, information architect, occasional front-end developer, perpetual do-gooder
+I’m a former cancer researcher who switched to tech to help people faster. I’ve made information clearer (and infinitely more actionable) about COVID, affordable housing, and permitting for local and federal government.
 
 I love to chat with other technologists and career-changers! [Schedule a virtual coffee with me! ☕️](https://calendar.app.google/WLKzHeMRDWNQ9Qzx5).
