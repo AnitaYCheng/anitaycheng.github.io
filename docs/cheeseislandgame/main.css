@@ -1,0 +1,167 @@
+body {
+	margin:0px;
+	background:#8DCDCE url(bkgd.png) repeat-x fixed left;
+	font-family:arial, sans-serif;
+	font-size:0.9em;
+	line-height:1.2em;
+	}
+	
+img {
+	border:0;
+	}
+	
+a img {
+	filter:alpha(opacity=95);
+	opacity:0.95;
+	}
+	
+a:hover img {
+	filter:alpha(opacity=100);
+	opacity:1;
+	}
+	
+a:hover {
+	text-decoration:none;
+	}
+	
+	
+/* Header styles */
+#header {
+	width:880px;
+	background-color:#faba30;
+	display:block;
+	position:fixed;
+	border-bottom:15px solid #df9e12;
+	top:0;
+	left:50%;
+	margin-left:-440px;
+	z-index:2;
+	}
+	
+#header #logo {
+	float:left;
+	margin:2px 10px 0 -30px;
+	}
+
+#header #buttons {
+	width:50%;
+	display:block;
+	float:left;
+	padding:12px 10px 0 40px;
+	}
+
+#header #balloon {
+	position:fixed;
+	top:0;
+	left:50%;
+	margin-left:330px;
+	}
+
+	
+/* Main content styles */
+#main {
+	margin-left:auto;
+	margin-right:auto;
+	width:880px;
+	background:transparent url(mainbkgd.png) repeat fixed center;
+	padding-top:135px;
+	overflow:hidden;
+	}
+
+/* Main content home page */
+#main .vid {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 0;
+	z-index:1;
+	}
+	
+#main .descrip {
+	background-color:#ffffcc;
+	width:69%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0 1em;
+	border:1px solid #e8cf83;
+	margin-bottom:1em;
+	}
+		
+#main .features {
+	width:37.5%;
+	float:left;
+	padding:14px 15px 0 40px;
+	}
+	
+#main .features h2 {
+	font-size:1.3em;
+	background-color:#f8c86c;
+	padding:0.6em 0 0.6em 1.2em;
+	}
+	
+#main .features ul{
+	list-style:none;
+	padding-left:10px;
+	margin-left:0;
+	line-height:1.3em;
+	font-size:1em;
+	}
+
+#main .features li  {
+	background:transparent url(c.png) no-repeat center left;
+	padding-left:25px;
+	margin-bottom:25px;
+	}
+
+#main .list {
+	width:50%;
+	float:left;
+	padding:20px 0;
+	}
+
+#main img.screenshot  {
+	width:480px;
+	margin:10px 0;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #000;
+	}
+	
+#main .list .more {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+/* Main content faq*/
+#main .faqq {
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:1.5em;
+	margin-top:2.1em;
+	padding:0.4em;
+	font-weight:bold;
+	background-color:#f8c86c;
+	}
+
+#main .faqa {
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:4em;
+	margin-top:0.5em;
+	}
+	
+#main .wizard {
+	margin:0 0 -10px 200px;
+	}
+	
+#contact {
+	position:fixed;
+	bottom:0;
+	left:50%;
+	margin-left:-550px;
+	}

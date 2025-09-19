@@ -1,0 +1,111 @@
+body {
+	background-color:#e7f0f8;
+	background-image:none;
+	margin:0;
+	border:0;
+	font-family:arial, sans-serif;
+	font-size:1.5em;
+	line-height:1.4em;
+	}
+	
+img {
+	border:0;
+	opacity:1;
+	}
+	
+/* Header styles */
+#header {
+	width:100%;
+	border-bottom:0;
+	position:relative;
+	}
+	
+#header #logo {
+	width:100%;
+	padding-left:50%;
+	}
+	
+#header #buttons {
+	width:100%;
+	padding-left:50%;
+	}
+	
+#header #balloon {
+	width:150px;
+	position:absolute;
+	top:0;
+	right:0;
+	}
+	
+/* Main content styles */
+#main {
+	width:490px;
+	padding-top:0;
+	}
+	
+/* Main content home page */
+#main .vid {
+	width:90%;
+	padding:20px 0;
+	}
+	
+#main .descrip {
+	background-color:#ffffcc;
+	width:90%;
+	padding:1em;
+	border:1px solid #e8cf83;
+	line-height:1.2em;
+	margin:10px 10%;
+	}
+		
+#main .features {
+	width:95%;
+	padding:20px;
+	}
+	
+#main .features h2 {
+	font-size:1.1em;
+	line-height:1.5em;
+	background-color:#f8c86c;
+	padding:0.4em;
+	}
+	
+#main .list {
+	width:95%;
+	padding:20px 0;	
+	}
+
+#main img.screenshot  {
+	width:480px;
+	margin:10px 10%;
+	border:1px solid #000;
+	}
+	
+#main .list .more {
+	text-align:center;
+	}
+	
+/* Main content faq*/
+#main .faqq {
+	width:95%;
+	font-size:1.5em;
+	margin-top:2.2em;
+	padding:0.4em;
+	font-weight:bold;
+	background-color:#f8c86c;
+	}
+
+#main .faqa {
+	width:95%;
+	padding-left:1em;
+	margin-top:0.5em;
+	}
+	
+#main .wizard {
+	text-align:center;
+	}
+	
+#main #contact {
+	position:relative;
+	padding-right:50%;
+	}
