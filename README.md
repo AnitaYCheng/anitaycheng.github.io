@@ -7,8 +7,8 @@ I prefer to build and test locally, so I'm just launching the GitHub page from t
 - Make sure you're using `node 16` to use Eleventy Duo. Use `nvm install 16` to install it.
 - Install dependencies with `yarn install` 
 - Add any plugins with `yarn add` if the directions are usually `npm install`
-- Serve the site locally with `yarn dev`
-    - `yarn build` will clear out anything in the output folder to build a production version of the site. However, I needed separate `.js` files to use the Photoswipe gallery. Compiling all the JS files rendered it useless. So I actually use the files generated from `yarn dev` to push to GitHub. It apparently doesn't make much of a difference, [according to Eleventy documentation](https://www.11ty.dev/docs/deployment/). 
+- Serve the site locally with `yarn start`
+    - `yarn build` will clear out anything in the output folder to build a production version of the site. However, I needed separate `.js` files to use the Photoswipe gallery. Compiling all the JS files rendered it useless. So I actually use the files generated from `yarn start` to push to GitHub. It apparently doesn't make much of a difference, [according to Eleventy documentation](https://www.11ty.dev/docs/deployment/). 
 
 ## Customize
 Open `data/site.json` and adjust the values to your details, it contains vital information to make the site your own. You'll need to change the description, title and URL to match with the project, edit navigation items and social media links.

@@ -17,7 +17,7 @@ const isProd = process.env.ELEVENTY_ENV === 'production'
 
 const manifestPath = path.resolve(
   __dirname,
-  'public',
+  'docs',
   'assets',
   'manifest.json'
 );

@@ -83,12 +83,12 @@ But there are also various definitions of empathy. Bern cites Indi Young’s wor
 Most immediate and universal empathy is emotional empathy. Not replicable, but cognitive empathy (motivation) is.
 
 The confusion between sympathy and empathy:
-{% image "src/images/Pasted_image_20240414004403.png", "Two graphics depict sympathy vs empathy in two ways—glasses with separate lenses of sympathy feeling FOR someone and empathy feeling WITH someone, and a dial of feelings where apathy at 0, then goes to sympathy, empathy, then compassion", "" %}
+{% image "src/images/Pasted_image_20240414004403.jpg", "Two graphics depict sympathy vs empathy in two ways—glasses with separate lenses of sympathy feeling FOR someone and empathy feeling WITH someone, and a dial of feelings where apathy at 0, then goes to sympathy, empathy, then compassion", "" %}
 
 [Brené Brown’s video of sympathy vs empathy](https://www.youtube.com/watch?v=1Evwgu369Jw) is a great intro!
 
 A test in [Simon Baron-Cohen’s book “Zero Degrees of Empathy”](https://www.amazon.com/Zero-Degrees-Empathy-Theory-Cruelty/dp/0713997915) showed someone’s  level of EQ had nothing to do with one’s job.
-{% image "src/images/Pasted_image_20240414010157.png", "A scatter chart from a research paper, showing EQ levels about equal between job types like UX and HCI, management, engineering and development, design and motion and video.", "" %}
+{% image "src/images/Pasted_image_20240414010157.jpg", "A scatter chart from a research paper, showing EQ levels about equal between job types like UX and HCI, management, engineering and development, design and motion and video.", "" %}
 
 What made good business throughout history:
 1. Community
@@ -97,7 +97,7 @@ What made good business throughout history:
 4. Experience (in the present)
 
 Empathy matters in products, teams, and life. You need to draw from people to get ideas for your solutions.
-{% image "src/images/Pasted_image_20240414010337.png", "Two circular flow diagrams, one depecting The Solution with design, delivery, and ideas, being connected via Creative Inspiration to the other diagram People who walk, listen, and simmer.", "" %}
+{% image "src/images/Pasted_image_20240414010337.jpg", "Two circular flow diagrams, one depecting The Solution with design, delivery, and ideas, being connected via Creative Inspiration to the other diagram People who walk, listen, and simmer.", "" %}
 
 Bern says that empathy is an important part of design, and cites [Jon Kolko’s book](https://www.amazon.com/Well-Designed-Empathy-Create-Products-People/dp/1625274793).
 
