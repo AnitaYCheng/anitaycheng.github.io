@@ -10,7 +10,7 @@ description: A bit about how I tick.
 
 Yes, I worked in cancer research for 7 years, mostly because I didn’t know what else to do with a biology degree that wasn’t med school or grad school.
 
-I eventually figured out that what really motivates me is empowering people with information. A [random side project](/projects/wssr/) led me to UX, and I loved it so much I decided to do it for a job! 😄 I [cobbled together a design education](/writing/changing-careers/) for myself, then I happened to land in government, where I‘ve been clarifying complex public services for the past 10 years. 
+I eventually figured out that what really motivates me is empowering people with information. A [random side project](/projects/wssr/) led me to UX, and I loved it so much I decided to do it for a job! 😄 I [cobbled together a design education](/writing/changing-careers/) for myself, then I happened to land in government, where I’ve been clarifying complex public services for the past 10 years. 
 
 My dogged urge to get actionable information to people has gotten me on projects involving affordable housing, permitting, and COVID.
 
